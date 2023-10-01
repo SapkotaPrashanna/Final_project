@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">    
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @stack('css')
-    
+     
 </head>
 <body>
     <div id="app">
@@ -29,5 +29,19 @@
     @include('sweetalert::alert')
     <script src="{{ asset('js/app.js') }}"></script>
     @stack('js')
-</body>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
+   
+    <script type="text/javascript">
+        var botmanWidget = {
+            introMessage: 'Hello',
+            aboutText: 'Rojgar '
+        };
+        </script>
+
+<script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
+
+    </body>
+   
+
 </html>

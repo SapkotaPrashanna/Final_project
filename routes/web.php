@@ -9,9 +9,14 @@ use App\Http\Controllers\JobApplicationController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\savedJobController;
+use App\Http\Controllers\BotManController;
 use Illuminate\Support\Facades\Route;
 
 //public routes
+//for chatbot
+Route::get('/botman', [BotManController::class,"handle"]);
+Route::post('/botman', [BotManController::class,"handle"]);
+
 Route::get('/', [PostController::class, 'index'])->name('post.index');
 Route::get('/job/{job}', [PostController::class, 'show'])->name('post.show');
 Route::get('employer/{employer}', [AuthorController::class, 'employer'])->name('account.employer');
