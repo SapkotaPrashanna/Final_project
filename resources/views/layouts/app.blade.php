@@ -34,8 +34,8 @@
    
     <script type="text/javascript">
         var botmanWidget = {
-            introMessage: 'Hello',
-            aboutText: 'Rojgar '
+            introMessage: 'Hello ! Welcome to Be-Rojgar. I am your Rojgar Expert BotMan. Here is the list of commands I can respond.\n  # Hello \r\n    # What is your name?    \n# I need a job. \n   # Tell me about your portal.\n     # What are the services provided?    # About website ',
+            aboutText: 'Rojgar Expert '
         };
         </script>
 
